@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!--メディアクエリ-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--検索エンジン対応-->
+        <link rel="canonical" href="https://inoagrifarm.sytes.net/">
+        <!--CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--表示名-->
+        <title>かくれんぼ　-cat & book cafe-</title>
+    </head>
+    <body>
+        <header><!--固定半透明-->
+            <div id="headermenu">
+                <div id="headermenu-box">
+                    <img src="./picture/illust/mainlogo.png">
+                    <nav id="pcnavi">
+                        <a href="#consept">コンセプト</a>
+                        <a href="#attention">守っていただきたいこと</a>
+                        <a href="#cats">猫の紹介</a>
+                        <a href="#form">予約</a>
+                        <a href="#access">アクセス</a>
+                    </nav>
+
+                    <!--ハンバーガーメニュー 700px以下で表示-->
+                    
+                        <button type="button" id="humberger-btn">MENU</button>
+                    
+                    <!--メニューボタン押下時表示-->
+                    <nav id="humbergermenu-box">
+                        <button type="button" class="back-btn">×</button>
+                        <a class="humberger_menu_list" href="#consept">コンセプト</a>
+                        <a class="humberger_menu_list" href="#attention">守っていただきたいこと</a>
+                        <a class="humberger_menu_list" href="#cats">猫の紹介</a>
+                        <a class="humberger_menu_list" href="#form">予約</a>
+                        <a class="humberger_menu_list list_last" href="#access">アクセス</a>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="mainvisual"></section>
+            <section id="consept" class="sectionwidth js-fadein">
+                <h1 class="title">コンセプト</h1>
+                <p>
+                    畳や木のぬくもりを感じる和の空間で、落ち着いて本を楽しめるカフェです。<br>
+                    猫が出てくる本コーナーを常設。<br>
+                    和書を中心に古典・俳句・現代小説のセレクション。<br>
+                    席はソファ＋ローテーブル中心。<br>
+                    静かに過ごしたい方にも、"邪魔されたい人向け"の机も用意しています。
+                </p>
+                <div id="consept-block">
+                    <div class="consept-list">
+                        <h2>ワンドリンク＋時間料金制</h2>
+                        <p>
+                            料金は30分/＊＊円とお飲み物1品以上必須。
+                            蓋つきカップで提供しており、
+                            猫と本を気にせず楽しめます。
+                        </p>
+                    </div>
+                    <div class="consept-list">
+                        <h2>本の持ち込み可（自己責任）</h2>
+                        <p>
+                            本の持ち込みは可ですが、猫による汚損の責任は負いかねます。
+                            静かに本を楽しむ空間です。
+                        </p>
+                    </div>
+                    <div class="consept-list">
+                        <h2>少人数制（予約推奨）</h2>
+                        <p>
+                            店内は広くありません。少人数制のため、予約をおすすめします。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <img class="bg-cat-respons" src="./picture/illust/cat_kiji.PNG">
+            
+            <section id="attention" class="sectionwidth section-bg js-fadein">
+                <img class="bg-cat bg-cat-attention" src="./picture/illust/cat_kiji.PNG">
+                <h1 class="title">守っていただきたいこと</h1>
+                <p>
+                    当店では、猫たちと本をゆったりと楽しんでいただくために、
+                    いくつかのお願いごとがございます。
+                    どうぞご一読いただき、心地よい時間をお過ごしください。
+                </p>
+                <div id="attention-block">
+                    <ul>
+                        <li>
+                            <h2>猫と過ごすときのお願い</h2>
+                            <p>
+                                猫は気まぐれな生き物です。無理に抱っこしたり追いかけたりせず、
+                                猫の気持ちを大切にしてあげてください。<br>
+                                眠っている猫はそっと見守ってあげましょう。寝顔を眺めるのもまた楽しいひとときです。
+                            </p>
+                        </li>
+                        <li class="list-padding">
+                            <h2>店内での過ごし方について</h2>
+                            <p>
+                                大きな声や急な動きは、猫たちをびっくりさせてしまいます。
+                                また、本を楽しまれている他のお客様のご迷惑にもなるため、ゆったりとした空気を
+                                一緒に楽しんでいただけると嬉しいです。<br>
+                                小さなお子さまとご一緒の際は、保護者による見守りをお願いしております。
+                            </p>
+                        </li>
+                        <li>
+                            <h2>その他のお願い</h2>
+                            <p>
+                                ご入店の際には、手洗いや消毒にご協力ください。<br>
+                                時間制でのご利用となりますので、お時間が近づきましたらお声かけいたします。<br>
+                                猫たちや本とのひとときを、写真に残していただくのは大歓迎です。ただしフラッシュ撮影はご遠慮ください。SNSに投稿される際は、お店のルールをご確認ください。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <img class="bg-cat-respons" src="./picture/illust/cat_kuroppo.PNG">
+
+            <section id="cats" class="sectionwidth section-bg js-fadein">
+                <img class="bg-cat bg-cat-cats" src="./picture/illust/cat_kuroppo.PNG">
+            
+                <h1 class="title">猫紹介</h1>
+                <div id="cats-selection">
+                    <article class="cats-box">
+                        <img src="./picture/cats_sirokuro.JPG">
+                        <h2>カイ</h2>
+                        <p>1歳のおとこのこ。口元と鼻の先がちょこんと黒いのがチャームポイント。食欲旺盛、よく食べる子です。</p>
+                    </article>
+                    <article class="cats-box">
+                        <img src="./picture/cats_long.jpg">
+                        <h2>大五郎</h2>
+                        <p>おとこのこ。おっとりしているけど、図太さはピカイチ。ナマコを食べたことがあるらしい。</p>
+                    </article>
+                    <article class="cats-box">
+                        <img src="./picture/cats_siro.jpg">
+                        <h2>こたろう</h2>
+                        <p>おとこのこ。ちょっとビビリですが、しっぽだけ黒いのがチャームポイント。
+                            ごはんのときはしっかりおねだりします。</p>
+                    </article>
+                    <article class="cats-box">
+                        <img src="./picture/cats_kiji.JPG">
+                        <h2>ゆず</h2>
+                        <p>４歳のおんなのこ。人懐っこく、どんな人にでも寄ってきてくれます。</p>
+                    </article>
+                    <article class="cats-box">
+                        <img src="">
+                        <h2>だみ</h2>
+                        <p>２歳のおんなのこ。みどりの猫じゃらしが最近のブーム。</p>
+                    </article>
+                </div>
+            </section>
+
+            <img class="bg-cat-respons" src="./picture/illust/cat_black.PNG">
+
+            <section id="form" class="sectionwidth section-bg js-fadein"> <!--SECTION5-->
+                <h1 class="title">予約フォーム</h1>
+                <form>
+                    <img class="bg-cat bg-cat-form" src="./picture/illust/cat_black.PNG">
+
+                    <div class="formlist">
+                        <label>氏名</label>
+                        <input type="text" placeholder="田中太郎" class="formtext">
+                    </div>
+                    <div class="formlist">
+                        <label>ご連絡先</label>
+                        <input type="text" name="email" placeholder="○○＠○○.com" class="formtext">
+                    </div>
+                    <div class="formlist">
+                        <label>人数</label>                
+                        <select name="text" class="formtext_2">
+                            <option value="1" label="1名">1名</option>
+                            <option value="2" label="2名">2名</option>
+                            <option value="3" label="3名">3名</option>
+                            <option value="4" label="4名">4名</option>
+                            <option value="5" label="5名">5名</option>
+                        </select>
+                        <span id="count_attention">※お部屋の都合上5名まで</span>
+                    </div>
+                    <div class="formlist">
+                        <label>予約希望日時</label>
+                        <input type="date" class="formtext_2">
+                    </div>
+                    <input type="submit" value="送信" id="submit">
+                </form>
+            </section>
+            
+            <section id="access" class="sectionwidth sectionwidth-none">
+                <h1 class="title">アクセス</h1>
+                <div id="access_box">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.4882469757302!2d130.72797313647305!3d32.79350578769583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f3ed3e811293%3A0x578759d8619aef6f!2z44CSODYyLTA5NTAg54aK5pys55yM54aK5pys5biC5Lit5aSu5Yy65rC05YmN5a-677yR5LiB55uu77yR77yX4oiS77yS77yZ!5e0!3m2!1sja!2sjp!4v1760678875973!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div id="contact">
+                        <p id="contact_1">
+                        〒＊＊＊－＊＊＊＊<br>
+                        熊本県＊＊区＊＊町　０－０－０<br>
+                        ＊＊ビル１階
+                        </p>
+                        <p>
+                        Mail　＊＊＊＠＊＊＊<br>
+                        Tel　＊＊＊＊＊＊＊＊＊＊＊
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <a href="#headermenu" id="uppage">
+                    <p id="uppage-arrow"></p>
+                    <img src="./picture/illust/cat_sirokuro.PNG">
+                    <p>↑ Page Topへ</p>
+            </a>
+        </main>
+        <footer>2025 M.Ino</footer>
+    </body>
+
+<!--jQuery読み込み-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    //上部スクロール
+    $('#uppage').click(function(){
+        $('body, html').animate({scrollTop: 0}, 500);
+    });
+    
+    //セクションフェードイン
+    $(function(){
+        $(window).scroll(function(){
+            $('.js-fadein').each(function(){
+                var fromTopPosi = $(this).offset().top;//この要素のスクロール位置
+                var scroll = $(window).scrollTop();//ウインドウのスクロール位置
+                var windowHeight = $(window).height();//ウィンドウの縦幅
+                if(scroll > fromTopPosi - windowHeight + 250){//上からのスクロール量が、要素のスクロール位置-ウインドウ立幅+100pxより大きい
+                    $(this).addClass('scroll');
+                }
+            });
+        });
+    });
+
+    //ハンバーガーメニュー
+    $(function(){
+        $('#humberger-btn').click(function(){
+            $('#humbergermenu-box').css('visibility', 'visible');
+        });
+    });
+
+    //隠す処理定義
+    function hidden(){
+        $('#humbergermenu-box').css('visibility', 'hidden');
+    };
+    //×ボタン
+    $('.back-btn').click(function(){
+        hidden();
+    });
+    //メニュークリック
+    $('.humberger_menu_list').click(function(){
+        hidden();
+    });
+</script>
+</html>
