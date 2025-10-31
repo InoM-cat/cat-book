@@ -224,24 +224,28 @@
 <!--jQuery読み込み-->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script>
+    //ページ遷移
+    $(function(){
+        $('body').fadeIn(800);
+    });
+
+    //セクションフェードイン
+    $(window).scroll(function(){
+        $('.js-fadein').each(function(){
+            var fromTopPosi = $(this).offset().top;//この要素のスクロール位置
+            var scroll = $(window).scrollTop();//ウインドウのスクロール位置
+            var windowHeight = $(window).height();//ウィンドウの縦幅
+            if(scroll > fromTopPosi - windowHeight + 250){//上からのスクロール量が、要素のスクロール位置-ウインドウ立幅+100pxより大きい
+                $(this).addClass('scroll');
+            }
+        });
+    });
+
     //上部スクロール
     $('#uppage').click(function(){
         $('body, html').animate({scrollTop: 0}, 500);
     });
-    
-    //セクションフェードイン
-    $(function(){
-        $(window).scroll(function(){
-            $('.js-fadein').each(function(){
-                var fromTopPosi = $(this).offset().top;//この要素のスクロール位置
-                var scroll = $(window).scrollTop();//ウインドウのスクロール位置
-                var windowHeight = $(window).height();//ウィンドウの縦幅
-                if(scroll > fromTopPosi - windowHeight + 250){//上からのスクロール量が、要素のスクロール位置-ウインドウ立幅+100pxより大きい
-                    $(this).addClass('scroll');
-                }
-            });
-        });
-    });
+
 
     //ハンバーガーメニュー
     $(function(){
@@ -262,5 +266,10 @@
     $('.humberger_menu_list').click(function(){
         hidden();
     });
+    //トップページフェードアウト
+    /*$(document).ready(function(){
+        $('body::after').css('', '');
+    });
+    */
 </script>
 </html>

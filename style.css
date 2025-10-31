@@ -7,6 +7,9 @@ header, body, footer{
     font-size: 20px;
     font-family: "Zen Maru Gothic", sans-serif;
 }
+body {
+    display: none;
+}
 
 /*ーーーーーーーーーーヘッダとフッターーーーーーーーーー*/
 header {
@@ -110,7 +113,7 @@ main {
 }
 /*SECTION1*/
 #mainvisual {
-    min-height: 600px;
+    min-height: 700px;
     margin-bottom: 120px;
     background: url(./picture/cat_mainpic.jpg) no-repeat center top/ cover;  
 }
